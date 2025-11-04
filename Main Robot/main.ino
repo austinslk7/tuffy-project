@@ -113,7 +113,7 @@ void setup() {
 void loop() {
   long dF = readMedianCM(trigFront, echoFront);
   long dL = readMedianCM(trigLeft,  echoLeft);
-  long dR = readMedianCM(trigRight, echoRight); // เผื่อใช้ภายหลัง
+  long dR = readMedianCM(trigRight, echoRight); 
 
   bool wallF = (dF < WALL_THRESH_CM);
   bool wallL = (dL < WALL_THRESH_CM);
